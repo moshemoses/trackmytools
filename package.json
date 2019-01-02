@@ -31,8 +31,7 @@
     "start": "npm run start-server",
     "deploy": "script/deploy",
     "build-watch": "webpack -p",
-    "start-server": "webpack -p",
-    "original start-server": "node server/app.js --ignore public",
+    "start-server": "node server/app.js --ignore public",
     "seed": "node seed.js"
   },
   "devDependencies": {
