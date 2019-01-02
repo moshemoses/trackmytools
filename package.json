@@ -1,5 +1,5 @@
 {
-  "name": "loggin",
+  "name": "mytooltracker",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -24,6 +24,7 @@
   },
   "scripts": {
     "start": "npm run start-server & npm run build-watch",
+    "deploy": "script/deploy",
     "build-watch": "webpack -w",
     "start-server": "nodemon server/app.js --ignore public",
     "seed": "node seed.js"
