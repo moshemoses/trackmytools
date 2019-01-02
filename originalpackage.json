@@ -1,3 +1,4 @@
+/*
 {
   "name": "mytooltracker",
   "version": "1.0.0",
@@ -28,11 +29,10 @@
   },
   "scripts": {
     "postinstall": "webpack -p",
-    "start": "npm run start-server",
+    "start": "npm run start-server & npm run build-watch",
     "deploy": "script/deploy",
     "build-watch": "webpack -p",
-    "start-server": "webpack -p",
-    "original start-server": "node server/app.js --ignore public",
+    "start-server": "node server/app.js --ignore public",
     "seed": "node seed.js"
   },
   "devDependencies": {
@@ -46,3 +46,5 @@
     "webpack-dev-server": "^2.11.3"
   }
 }
+*/
+
