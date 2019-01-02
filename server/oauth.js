@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const passport = require("passport");
 const { User } = require("./db");
-const secrets = require("../secret");
+const secrets = require("../secrets");
 
 module.exports = router;
 
