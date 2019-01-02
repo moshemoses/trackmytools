@@ -1,0 +1,65 @@
+/* abolish serifs */
+body {
+  font-family: arial, sans-serif;
+}
+table {
+  margin: 10px;
+  background-color: yellow;
+  border: solid black 5px;
+  border-radius: 10px;
+}
+
+th {
+  background-color: gray;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+tr {
+  background-color: rgb(175, 175, 10);
+}
+#addToolForm {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid black 5px;
+  margin: 10px;
+}
+
+.addtooltoggle {
+  background-color: yellow;
+  width: 25%;
+  border: solid black 3px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+label {
+  padding: 5px;
+}
+
+input {
+  padding: 5px;
+  margin: 5px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+#flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#flex-container > label {
+  background-color: #f1f1f1;
+  width: 30%;
+  margin: 5px;
+  text-align: center;
+  align-items: center;
+  line-height: 3%;
+  font-size: 20px;
+}
