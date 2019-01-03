@@ -27,11 +27,12 @@
     "babel-polyfill": "^6.26.0"
   },
   "scripts": {
-    "start": "npm run start-server & npm run build-watch",
+    "start": "npm run start-server",
     "deploy": "script/deploy",
     "build-watch": "webpack -p",
     "start-server": "node server/app.js --ignore public",
-    "seed": "node seed.js"
+    "seed": "node seed.js",
+    "postinstall": "npm run webpack -p"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
