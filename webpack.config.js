@@ -1,16 +1,23 @@
+const isDev = process.env.NODE_ENV === "development";
+
 module.exports = {
-  // babel-polyfill enables async-await in our client js
-  entry: ["babel-polyfill", "./client/index.js"],
+  entry: [
+    "@babel/polyfill", // enables async-await
+    "./client/index.js"
+  ],
   output: {
     path: __dirname,
     filename: "./public/bundle.js"
   },
-  context: __dirname,
+  resolve: {
+    extensions: [".js", ".jsx"]
+  },
+  devtool: "source-map",
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: /node_modules/,
         loader: "babel-loader"
       }
     ]
