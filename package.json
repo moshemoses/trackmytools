@@ -29,11 +29,9 @@
   "scripts": {
     "start": "npm run start-server",
     "deploy": "script/deploy",
-    "build-client": "webpack -p",
-    "build-watch": "webpack -p",
     "start-server": "node server/app.js --ignore public",
-    "seed": "node seed.js",
-    "postinstall": "npm run build-client"
+    "seed": "node seed.js"
+
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
