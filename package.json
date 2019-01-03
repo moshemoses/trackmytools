@@ -28,7 +28,7 @@
   },
   "scripts": {
     "postinstall": "webpack -p",
-    "start": "npm run start-server & 'webpack -p'",
+    "start": "npm run start-server",
     "deploy": "script/deploy",
     "build-watch": "webpack -p",
     "start-server": "node server/app.js --ignore public",
