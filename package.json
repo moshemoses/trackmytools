@@ -24,17 +24,16 @@
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "sequelize": "^4.42.0",
-    "webpack": "^3.12.0"
+    "sequelize": "^4.42.0"
   },
   "scripts": {
-    "start": "npm run start-server & npm run build-client",
+    "start": "npm run start-server",
     "deploy": "script/deploy",
     "build-client": "webpack -p",
     "build-watch": "webpack -p",
     "start-server": "node server/app.js --ignore public",
     "seed": "node seed.js",
-    "postinstall": "npm run build-watch"
+    "postinstall": "npm run build-client"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
