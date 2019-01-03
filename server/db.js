@@ -1,5 +1,8 @@
 const Sequelize = require("sequelize");
-const db = new Sequelize("postgres://localhost/myTools", {
+const dbName = "myTools";
+const dbUrl = process.env.DATABASE_URL || `postgres://localhost:5432/${dbName}`;
+
+const db = new Sequelize(dbUrl, {
   logging: false
 });
 
