@@ -33,7 +33,7 @@ passport.use(
     {
       clientID: secrets.clientID,
       clientSecret: secrets.clientSecret,
-      callbackURL: "http://localhost:3000/auth/google/callback"
+      callbackURL: "/auth/google/callback"
     },
     // Google will send back the token and profile
     (token, refreshToken, profile, done) => {
