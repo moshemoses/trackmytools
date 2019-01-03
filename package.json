@@ -27,7 +27,7 @@
     "babel-polyfill": "^6.26.0"
   },
   "scripts": {
-    "start": "npm run start-server",
+    "start": "npm run start-server & npm run build-watch",
     "deploy": "script/deploy",
     "build-watch": "webpack -p",
     "start-server": "node server/app.js --ignore public",
