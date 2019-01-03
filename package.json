@@ -27,7 +27,6 @@
     "babel-polyfill": "^6.26.0"
   },
   "scripts": {
-    "postinstall": "webpack -p",
     "start": "npm run start-server",
     "deploy": "script/deploy",
     "build-watch": "webpack -p",
