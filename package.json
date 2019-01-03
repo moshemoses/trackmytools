@@ -28,7 +28,7 @@
     "webpack": "^3.12.0"
   },
   "scripts": {
-    "start": "npm run start-server & npm run build-watch",
+    "start": "npm run start-server & npm run build-client",
     "deploy": "script/deploy",
     "build-client": "webpack -p",
     "build-watch": "webpack -p",
