@@ -32,7 +32,7 @@
     "build-watch": "webpack -p",
     "start-server": "node server/app.js --ignore public",
     "seed": "node seed.js",
-    "postinstall": "npm run webpack -p"
+    "postinstall": "npm run build-watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
