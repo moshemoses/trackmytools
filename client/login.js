@@ -11,7 +11,7 @@ const Login = props => {
     <div className="row">
       <div className="col s12 m7">
         <div className="card medium">
-          <span className="card-title">Tool Chain</span>
+          <span className="card-title">Tool Belt</span>
           <div className="card-image">
             <img src="toolbox.png" className="responsive-img" />
           </div>
