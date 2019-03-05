@@ -1,7 +1,7 @@
 const secrets = {
   clientID:
-    "97499673568-ih9jf77t2u9kapn2v5o86mbtpkfl9d4q.apps.googleusercontent.com",
-  clientSecret: "7kBeZdEAGQwUf7M4jBNE27fK"
+    "60118700751-9k292o44h1kpk3cdkn3j8nvubv9ns368.apps.googleusercontent.com",
+  clientSecret: "xrRfeOLxgZEEiuzwDxbH256i"
 };
 
 module.exports = secrets;

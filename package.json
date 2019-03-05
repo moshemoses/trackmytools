@@ -5,10 +5,13 @@
   "license": "MIT",
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
     "axios": "^0.17.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.3.1",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "morgan": "^1.9.1",
@@ -17,6 +20,7 @@
     "pg": "^6.4.0",
     "pg-hstore": "^2.3.2",
     "react": "^16.7.0",
+    "react-bootstrap": "^1.0.0-beta.5",
     "react-dom": "^16.7.0",
     "react-pure-lifecycle": "^3.0.0",
     "react-redux": "^5.1.1",
@@ -26,11 +30,11 @@
     "redux-thunk": "^2.3.0",
     "sequelize": "^4.42.0",
     "webpack": "^4.20.0",
-    "webpack-dev-server": "^2.11.3",
-    "webpack-cli": "^3.1.1"
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^2.11.3"
   },
   "scripts": {
-    "start": "npm run start-server",
+    "start": "npm run build-client & npm run start-server",
     "deploy": "script/deploy",
     "start-server": "node server/app.js --ignore public",
     "seed": "node seed.js",

@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const OauthLoginForm = (props) => {
+const OauthLoginForm = props => {
   return (
-    <form method='get' action='/auth/google'>
-      <button type='submit' className='btn bg-red white p1 rounded'>Login with Google</button>
+    <form method="get" action="/auth/google">
+      <button type="submit" className="btn waves-effect waves-light">
+        Login with Google
+      </button>
     </form>
-  )
-}
+  );
+};
 
-export default OauthLoginForm
+export default OauthLoginForm;

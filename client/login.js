@@ -8,13 +8,20 @@ const Login = props => {
   const { handleSubmit } = props;
 
   return (
-    <div className="h100 w100 flex column align-items-center justify-center">
-      <h1>Tool Tracker</h1>
-      <div className="flex w50">
-        <img src="/toolbox.png" />
-        <div className="grow1">
-          <LocalLoginForm handleSubmit={handleSubmit} />
-          <OauthLoginForm />
+    <div className="row">
+      <div className="col s12 m7">
+        <div className="card medium">
+          <div className="card-image">
+            <img src="toolbox.png" className="responsive-img" />
+            <span className="card-title">Tool Chain</span>
+          </div>
+          <div className="card-content">
+            <p>Track your tool with us.</p>
+          </div>
+          <div className="card-action">
+            <LocalLoginForm handleSubmit={handleSubmit} />
+            <OauthLoginForm />
+          </div>
         </div>
       </div>
     </div>

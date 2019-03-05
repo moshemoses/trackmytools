@@ -4,14 +4,12 @@ import { removeToolFromCollection } from "../store";
 
 const DisplayTools = props => {
   const { tools, updateSection } = props;
-  const formSub = () => {
-    console.log("don dude");
-  };
+  const formSub = () => {};
   if (Array.isArray(tools) && tools.length > 0) {
     return (
       <div>
-        <h2>Your Tools</h2>
-        <table>
+        <h2 className="homer">Your Tools</h2>
+        <table className="centered highlight response-table">
           <tbody>
             <tr>
               <th />
@@ -37,7 +35,10 @@ const DisplayTools = props => {
                       X
                     </button>
                   </td>
-                  <td onClick={updateSection} className={`toolType ${tool.id}`}>
+                  <td
+                    onClick={updateSection}
+                    className={`left-align toolType ${tool.id}`}
+                  >
                     {tool.toolType}
                   </td>
                   <td
@@ -102,9 +103,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => ({
   removeTool: toolId => dispatch(removeToolFromCollection(toolId)),
-  formSub: () => {
-    console.log("oy");
-  },
+  formSub: () => {},
   updateSection: () => {
     console.log(event);
 
