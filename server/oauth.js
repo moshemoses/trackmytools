@@ -1,7 +1,12 @@
 const router = require("express").Router();
 const passport = require("passport");
 const { User } = require("./db");
-const secrets = require("../secrets");
+//const secrets = require("../secrets");
+
+let secrets = {
+  clientID: process.env.CLIENTID,
+  clientSecret: process.env.CLIENTSECRET
+};
 
 module.exports = router;
 
