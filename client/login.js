@@ -20,6 +20,7 @@ const Login = props => {
           </div>
           <div className="card-action">
             <LocalLoginForm handleSubmit={handleSubmit} />
+            <br />
             <OauthLoginForm />
           </div>
         </div>

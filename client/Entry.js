@@ -35,7 +35,9 @@ class Entry extends React.Component {
             {/* <ul id="nav-mobile" class="left hide-on-med-and-down"> */}
             <ul>
               <li>
-                <a onClick={this.displayToolAdder}>Add Tools</a>
+                <a onClick={this.displayToolAdder} className="pulse">
+                  Add Tools
+                </a>
               </li>
               <li>
                 <a onClick={this.handleClick}>Logout</a>
